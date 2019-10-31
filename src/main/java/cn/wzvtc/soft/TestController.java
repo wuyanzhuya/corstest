@@ -12,7 +12,7 @@ import java.util.Map;
 @RestController("/" )
 public class TestController {
 
-    @RequestMapping(value="data.json",method={RequestMethod.GET})
+    @RequestMapping(value="data.json")
     public Map<String,String> bookById(){
         Map<String,String> resultMap=new HashMap<>();
         resultMap.put("myname","李彦祖");
